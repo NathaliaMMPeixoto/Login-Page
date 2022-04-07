@@ -128,19 +128,29 @@ cursor: pointer;
 }
 .login_register {
   
-  color: #21b1d4;
+  color: rgba(167, 49, 49, 0.74);
   text-decoration: none;
   padding: 10px;
   border-radius: 4px;
-  border: 2px solid #21b1d4;
+  border: 2px solid rgba(167, 49, 49, 0.74);
   transition: .3s;
 }
 
 .login_register:hover {
-  border: 2px solid #21b1d4;
+  border: 2px solid rgba(167, 49, 49, 0.74);
   text-decoration: underline;
   font-weight: bold;
 
   }
   
+  @media screen and (max-width: 760px)  {
+    .login {
+      height: 100vh;
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
   
