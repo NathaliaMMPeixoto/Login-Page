@@ -6,21 +6,24 @@ body {
 
 .login {
   height: 100vh;
-  background: linear-gradient(120deg, #E75590, #00C2CB);
+  background-image: url("./img/krakenimages-376KN_ISplE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 .login_container {
-  min-height: 400px;
+min-height: 100%;
 width: 300px;
-background-color: #ffffff;
+background-color: #f8f1f1;
 box-sizing: border-box;
 padding: 33px;
-border-radius: 8px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 }
 
 .login_title {
@@ -28,11 +31,21 @@ align-items: center;
   color: #303030;
 }
 
+.login_title::before {
+  /* colocar o símbolo do site */
+}
+
+.login_access {
+  font-weight: bold;
+  color: #303030
+}
 .login_form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  
 }
 
 .login_input {
@@ -42,6 +55,7 @@ align-items: center;
   padding-left: 8px;
   border: unset;
   outline: none;
+  border-radius: 8px;
 }
 
 .login_input_border {
@@ -51,6 +65,15 @@ align-items: center;
   background-color: #cfcfcf;
   transition: .3s ease-in-out;
 }
+
+.login_reset_border {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: #cfcfcf;
+  transition: .3s;
+}
+
 
 .login_input_border::after {
   content: '';
@@ -66,20 +89,58 @@ align-items: center;
 height: 48px;
 width: 100%;
 outline: none;
-background: linear-gradient(120deg, #E75590, #00C2CB, #E75590);
+background: rgba(167, 49, 49, 0.74);
 background-size: 200%;
 margin-bottom: 32px;
 color: #ffffff;
 font-size: 16px;
-font-weight: bold;
 border: unset;
 border-radius: 4px;
 cursor: pointer;
-transition: .5s ease-in-out;
+
 }
 
+.login_submit:hover {
+  border: 2px solid rgba(167, 49, 49, 0.74) ;
+  font-weight: bold;
+
+  }
+  
+
 .login_reset {
-  font-size: 12px;
-  color: #929292;
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: #3f3b3b;
   text-decoration: none;
+  font-style: italic;
+   
 }
+
+.login_reset:hover {
+  text-decoration: underline;
+  
+}
+
+.login_register_question{
+  color: #303030;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.login_register {
+  
+  color: #21b1d4;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #21b1d4;
+  transition: .3s;
+}
+
+.login_register:hover {
+  border: 2px solid #21b1d4;
+  text-decoration: underline;
+  font-weight: bold;
+
+  }
+  
+  
